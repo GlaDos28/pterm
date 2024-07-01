@@ -1,6 +1,6 @@
 ### tree/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/tree/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/tree/demo/animation.svg)
 
 <details>
 
@@ -10,7 +10,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 
 ### tree/from-leveled-list
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/tree/from-leveled-list/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/tree/from-leveled-list/animation.svg)
 
 <details>
 
@@ -52,8 +52,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {

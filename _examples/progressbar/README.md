@@ -1,6 +1,6 @@
 ### progressbar/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/progressbar/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/progressbar/demo/animation.svg)
 
 <details>
 
@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 // Slice of strings representing names of pseudo applications to be downloaded.
@@ -52,7 +52,7 @@ func main() {
 
 ### progressbar/multiple
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/progressbar/multiple/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/progressbar/multiple/animation.svg)
 
 <details>
 
@@ -64,7 +64,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

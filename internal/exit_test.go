@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pterm/pterm/internal"
+	"github.com/glados28/pterm/internal"
 )
 
 func TestExit(t *testing.T) {

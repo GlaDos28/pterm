@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart

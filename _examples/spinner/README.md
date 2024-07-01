@@ -1,6 +1,6 @@
 ### spinner/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/spinner/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/spinner/demo/animation.svg)
 
 <details>
 
@@ -12,7 +12,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -65,7 +65,7 @@ func main() {
 
 ### spinner/multiple
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/spinner/multiple/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/spinner/multiple/animation.svg)
 
 <details>
 
@@ -77,7 +77,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

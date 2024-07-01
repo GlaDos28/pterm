@@ -1,6 +1,6 @@
 ### heatmap/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/demo/animation.svg)
 
 <details>
 
@@ -10,7 +10,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 
 ### heatmap/custom_colors
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_colors/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_colors/animation.svg)
 
 <details>
 
@@ -50,7 +50,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -90,7 +90,7 @@ func main() {
 
 ### heatmap/custom_legend
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_legend/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_legend/animation.svg)
 
 <details>
 
@@ -100,7 +100,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -141,7 +141,7 @@ func main() {
 
 ### heatmap/custom_rgb
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_rgb/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_rgb/animation.svg)
 
 <details>
 
@@ -151,7 +151,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -198,7 +198,7 @@ func main() {
 
 ### heatmap/no_grid
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/no_grid/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/no_grid/animation.svg)
 
 <details>
 
@@ -208,7 +208,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -241,7 +241,7 @@ func main() {
 
 ### heatmap/separated
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/separated/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/separated/animation.svg)
 
 <details>
 
@@ -250,7 +250,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the heatmap.

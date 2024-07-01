@@ -8,7 +8,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 ### slog/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/slog/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/slog/demo/animation.svg)
 
 <details>
 
@@ -12,7 +12,7 @@ package main
 import (
 	"log/slog"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

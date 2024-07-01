@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Customize the DefaultHeader with a cyan background, black text, and a margin of 15.

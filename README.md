@@ -5,33 +5,33 @@
 
 <p align="center">
 
-<a href="https://github.com/pterm/pterm/releases" style="text-decoration: none">
-<img src="https://img.shields.io/github/v/release/pterm/pterm?style=flat-square" alt="Latest Release">
+<a href="https://github.com/glados28/pterm/releases" style="text-decoration: none">
+<img src="https://img.shields.io/github/v/release/glados28/pterm?style=flat-square" alt="Latest Release">
 </a>
 
-<a href="https://github.com/pterm/pterm/stargazers" style="text-decoration: none">
-<img src="https://img.shields.io/github/stars/pterm/pterm.svg?style=flat-square" alt="Stars">
+<a href="https://github.com/glados28/pterm/stargazers" style="text-decoration: none">
+<img src="https://img.shields.io/github/stars/glados28/pterm.svg?style=flat-square" alt="Stars">
 </a>
 
-<a href="https://github.com/pterm/pterm/fork" style="text-decoration: none">
-<img src="https://img.shields.io/github/forks/pterm/pterm.svg?style=flat-square" alt="Forks">
+<a href="https://github.com/glados28/pterm/fork" style="text-decoration: none">
+<img src="https://img.shields.io/github/forks/glados28/pterm.svg?style=flat-square" alt="Forks">
 </a>
 
 <a href="https://opensource.org/licenses/MIT" style="text-decoration: none">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
 </a>
 
-<a href="https://codecov.io/gh/pterm/pterm" style="text-decoration: none">
-<img src="https://img.shields.io/codecov/c/gh/pterm/pterm?color=magenta&logo=codecov&style=flat-square" alt="Downloads">
+<a href="https://codecov.io/gh/glados28/pterm" style="text-decoration: none">
+<img src="https://img.shields.io/codecov/c/gh/glados28/pterm?color=magenta&logo=codecov&style=flat-square" alt="Downloads">
 </a>
 
-<a href="https://codecov.io/gh/pterm/pterm" style="text-decoration: none">
+<a href="https://codecov.io/gh/glados28/pterm" style="text-decoration: none">
 <!-- unittestcount:start --><img src="https://img.shields.io/badge/Unit_Tests-28774-magenta?style=flat-square" alt="Forks"><!-- unittestcount:end -->
 </a>
 
 <br/>
 
-<a href="https://github.com/pterm/pterm/releases" style="text-decoration: none">
+<a href="https://github.com/glados28/pterm/releases" style="text-decoration: none">
 <img src="https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-informational?style=for-the-badge" alt="Downloads">
 </a>
 
@@ -42,10 +42,10 @@
 <br/>
 <br/>
 
-<a href="https://github.com/pterm/pterm/tree/master/_examples/demo/demo" style="text-decoration: none">
-<img src="https://raw.githubusercontent.com/pterm/pterm/master/_examples/demo/demo/animation.svg" alt="PTerm">
+<a href="https://github.com/glados28/pterm/tree/master/_examples/demo/demo" style="text-decoration: none">
+<img src="https://raw.githubusercontent.com/glados28/pterm/master/_examples/demo/demo/animation.svg" alt="PTerm">
 </a>
-<p align="center"><a href="https://github.com/pterm/pterm/tree/master/_examples/demo/demo" >Show Demo Code</p></p>
+<p align="center"><a href="https://github.com/glados28/pterm/tree/master/_examples/demo/demo" >Show Demo Code</p></p>
 
 </p>
 
@@ -60,9 +60,9 @@
 |
 <strong><a href="https://docs.pterm.sh/">Documentation</a></strong>
 |
-<strong><a href="https://github.com/pterm/pterm/tree/master/_examples">Examples</a></strong>
+<strong><a href="https://github.com/glados28/pterm/tree/master/_examples">Examples</a></strong>
 |
-<strong><a href="https://github.com/pterm/pterm/discussions?discussions_q=category%3AQ%26A">Q&A</a></strong>
+<strong><a href="https://github.com/glados28/pterm/discussions?discussions_q=category%3AQ%26A">Q&A</a></strong>
 |
 <strong><a href="https://discord.gg/vE2dNkfAmF">Discord</a></strong>
 </p>
@@ -75,7 +75,7 @@ To make PTerm available in your project, you can run the following command.\
 Make sure to run this command inside your project, when you're using go modules 😉
 
 ```sh
-go get github.com/pterm/pterm
+go get github.com/glados28/pterm
 ```
 
 ## ⭐ Main Features
@@ -88,7 +88,7 @@ go get github.com/pterm/pterm
 | ✨ Consistent Colors | PTerm uses the [ANSI color scheme](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) for uniformity and supports `TrueColor` for advanced terminals. |
 | 📚 Component system | PTerm's flexible `Printers` can be used individually or combined to generate beautiful console output. |
 | 🛠 Configurable   | PTerm is ready to use without configuration but allows easy customization for unique terminal output. |
-| ✏ Documentation  | Access comprehensive docs on [pkg.go.dev](https://pkg.go.dev/github.com/pterm/pterm#section-documentation) and view practical examples in the [examples section](#-examples). |
+| ✏ Documentation  | Access comprehensive docs on [pkg.go.dev](https://pkg.go.dev/github.com/glados28/pterm#section-documentation) and view practical examples in the [examples section](#-examples). |
 
 ### Printers (Components)
 
@@ -97,12 +97,12 @@ go get github.com/pterm/pterm
 <!-- printers:start -->
 | Feature | Feature | Feature | Feature | Feature |
 | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Area <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/area) |Barchart <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/barchart) |Basictext <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/basictext) |Bigtext <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/bigtext) |Box <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/box) |
-| Bulletlist <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/bulletlist) |Center <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/center) |Coloring <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/coloring) |Header <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/header) |Heatmap <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/heatmap) |
-| Interactive confirm <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/interactive_confirm) |Interactive continue <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/interactive_continue) |Interactive multiselect <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/interactive_multiselect) |Interactive select <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/interactive_select) |Interactive textinput <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/interactive_textinput) |
-| Logger <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/logger) |Multiple-live-printers <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/multiple-live-printers) |Panel <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/panel) |Paragraph <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/paragraph) |Prefix <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/prefix) |
-| Progressbar <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/progressbar) |Section <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/section) |Slog <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/slog) |Spinner <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/spinner) |Style <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/style) |
-| Table <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/table) |Theme <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/theme) |Tree <br/> [(Examples)](https://github.com/pterm/pterm/tree/master/_examples/tree) | |  | 
+| Area <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/area) |Barchart <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/barchart) |Basictext <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/basictext) |Bigtext <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/bigtext) |Box <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/box) |
+| Bulletlist <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/bulletlist) |Center <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/center) |Coloring <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/coloring) |Header <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/header) |Heatmap <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/heatmap) |
+| Interactive confirm <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/interactive_confirm) |Interactive continue <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/interactive_continue) |Interactive multiselect <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/interactive_multiselect) |Interactive select <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/interactive_select) |Interactive textinput <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/interactive_textinput) |
+| Logger <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/logger) |Multiple-live-printers <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/multiple-live-printers) |Panel <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/panel) |Paragraph <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/paragraph) |Prefix <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/prefix) |
+| Progressbar <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/progressbar) |Section <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/section) |Slog <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/slog) |Spinner <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/spinner) |Style <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/style) |
+| Table <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/table) |Theme <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/theme) |Tree <br/> [(Examples)](https://github.com/glados28/pterm/tree/master/_examples/tree) | |  | 
 <!-- printers:end -->
 
 </div>
@@ -126,7 +126,7 @@ go get github.com/pterm/pterm
 <tbody>
 <td align="center">
 <img width="2000" height="0"><br>
-<a href="https://github.com/pterm/pterm/tree/master/_examples">‼️ You can find all the examples, in a much better structure and their source code, in "_examples" ‼️</a><br>
+<a href="https://github.com/glados28/pterm/tree/master/_examples">‼️ You can find all the examples, in a much better structure and their source code, in "_examples" ‼️</a><br>
 <sub>Click on the link above to show the examples folder.</sub>
 <img width="2000" height="0">
 </td>
@@ -137,7 +137,7 @@ go get github.com/pterm/pterm
 <!-- examples:start -->
 ### area/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/demo/animation.svg)
 
 <details>
 
@@ -149,8 +149,8 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -190,7 +190,7 @@ func main() {
 
 ### area/center
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/center/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/center/animation.svg)
 
 <details>
 
@@ -202,7 +202,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -230,7 +230,7 @@ func main() {
 
 ### area/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/default/animation.svg)
 
 <details>
 
@@ -242,7 +242,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -271,7 +271,7 @@ func main() {
 
 ### area/dynamic-chart
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/dynamic-chart/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/dynamic-chart/animation.svg)
 
 <details>
 
@@ -283,7 +283,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -325,7 +325,7 @@ func dynamicBars(i int) pterm.Bars {
 
 ### area/fullscreen
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/fullscreen/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/fullscreen/animation.svg)
 
 <details>
 
@@ -337,7 +337,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -365,7 +365,7 @@ func main() {
 
 ### area/fullscreen-center
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/fullscreen-center/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/fullscreen-center/animation.svg)
 
 <details>
 
@@ -377,7 +377,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -406,7 +406,7 @@ func main() {
 
 ### barchart/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/demo/animation.svg)
 
 <details>
 
@@ -416,7 +416,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -447,7 +447,7 @@ func main() {
 
 ### barchart/custom-height
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/custom-height/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/custom-height/animation.svg)
 
 <details>
 
@@ -456,7 +456,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a slice of Bar structs. Each struct represents a bar in the chart.
@@ -486,7 +486,7 @@ func main() {
 
 ### barchart/custom-width
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/custom-width/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/custom-width/animation.svg)
 
 <details>
 
@@ -495,7 +495,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -523,7 +523,7 @@ func main() {
 
 ### barchart/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/default/animation.svg)
 
 <details>
 
@@ -532,7 +532,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart. Each bar is represented by a `pterm.Bar` struct.
@@ -561,7 +561,7 @@ func main() {
 
 ### barchart/horizontal
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/horizontal/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/horizontal/animation.svg)
 
 <details>
 
@@ -570,7 +570,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -598,7 +598,7 @@ func main() {
 
 ### barchart/horizontal-show-value
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/horizontal-show-value/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/horizontal-show-value/animation.svg)
 
 <details>
 
@@ -607,7 +607,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -635,7 +635,7 @@ func main() {
 
 ### barchart/mixed-values
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/mixed-values/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/mixed-values/animation.svg)
 
 <details>
 
@@ -645,7 +645,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -680,7 +680,7 @@ func main() {
 
 ### barchart/negative-values
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/negative-values/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/negative-values/animation.svg)
 
 <details>
 
@@ -690,7 +690,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -722,7 +722,7 @@ func main() {
 
 ### barchart/show-value
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/show-value/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/show-value/animation.svg)
 
 <details>
 
@@ -731,7 +731,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a slice of bars for the bar chart. Each bar is represented by a struct
@@ -762,7 +762,7 @@ func main() {
 
 ### basictext/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/basictext/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/basictext/demo/animation.svg)
 
 <details>
 
@@ -771,7 +771,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// The DefaultBasicText is a basic text printer provided by PTerm.
@@ -791,7 +791,7 @@ func main() {
 
 ### bigtext/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/demo/animation.svg)
 
 <details>
 
@@ -801,8 +801,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -832,7 +832,7 @@ func main() {
 
 ### bigtext/colored
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/colored/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/colored/animation.svg)
 
 <details>
 
@@ -842,8 +842,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -861,7 +861,7 @@ func main() {
 
 ### bigtext/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/default/animation.svg)
 
 <details>
 
@@ -871,8 +871,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -892,7 +892,7 @@ func main() {
 
 ### box/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/demo/animation.svg)
 
 <details>
 
@@ -901,7 +901,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Print an informational message.
@@ -932,7 +932,7 @@ func main() {
 
 ### box/custom-padding
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/custom-padding/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/custom-padding/animation.svg)
 
 <details>
 
@@ -941,7 +941,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with custom padding options and print "Hello, World!" inside it.
@@ -954,7 +954,7 @@ func main() {
 
 ### box/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/default/animation.svg)
 
 <details>
 
@@ -963,7 +963,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with PTerm and print a message in it.
@@ -977,7 +977,7 @@ func main() {
 
 ### box/title
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/title/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/title/animation.svg)
 
 <details>
 
@@ -986,7 +986,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with specified padding
@@ -1018,7 +1018,7 @@ func main() {
 
 ### bulletlist/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bulletlist/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bulletlist/demo/animation.svg)
 
 <details>
 
@@ -1028,8 +1028,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -1059,7 +1059,7 @@ func main() {
 
 ### bulletlist/customized
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bulletlist/customized/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bulletlist/customized/animation.svg)
 
 <details>
 
@@ -1069,7 +1069,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1107,7 +1107,7 @@ func main() {
 
 ### center/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/center/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/center/demo/animation.svg)
 
 <details>
 
@@ -1117,8 +1117,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -1141,7 +1141,7 @@ func main() {
 
 ### coloring/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/demo/animation.svg)
 
 <details>
 
@@ -1150,7 +1150,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a table with different foreground and background colors.
@@ -1185,7 +1185,7 @@ func main() {
 
 ### coloring/disable-output
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/disable-output/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/disable-output/animation.svg)
 
 <details>
 
@@ -1194,7 +1194,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Loop from 0 to 14
@@ -1221,7 +1221,7 @@ func main() {
 
 ### coloring/fade-colors
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/fade-colors/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/fade-colors/animation.svg)
 
 <details>
 
@@ -1231,7 +1231,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1264,7 +1264,7 @@ func main() {
 
 ### coloring/fade-colors-rgb-style
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/fade-colors-rgb-style/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/fade-colors-rgb-style/animation.svg)
 
 <details>
 
@@ -1276,7 +1276,7 @@ package main
 import (
 	"strings"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1346,7 +1346,7 @@ func printStyledString(str string, fgStart, fgEnd, bgStart, bgEnd pterm.RGB) {
 
 ### coloring/fade-multiple-colors
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/fade-multiple-colors/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/fade-multiple-colors/animation.svg)
 
 <details>
 
@@ -1358,7 +1358,7 @@ package main
 import (
 	"strings"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1401,7 +1401,7 @@ func main() {
 
 ### coloring/override-default-printers
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/override-default-printers/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/override-default-printers/animation.svg)
 
 <details>
 
@@ -1410,7 +1410,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Print a default error message with PTerm's built-in Error style.
@@ -1429,7 +1429,7 @@ func main() {
 
 ### coloring/print-color-rgb
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/print-color-rgb/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/print-color-rgb/animation.svg)
 
 <details>
 
@@ -1438,7 +1438,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a new RGB color with values 178, 44, 199.
@@ -1461,7 +1461,7 @@ func main() {
 
 ### coloring/print-color-rgb-style
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/coloring/print-color-rgb-style/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/coloring/print-color-rgb-style/animation.svg)
 
 <details>
 
@@ -1471,7 +1471,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1498,7 +1498,7 @@ func main() {
 
 ### demo/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/demo/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/demo/demo/animation.svg)
 
 <details>
 
@@ -1515,8 +1515,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 // Speed the demo up, by setting this flag.
@@ -1780,7 +1780,7 @@ func randomInt(min, max int) int {
 
 ### header/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/header/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/header/demo/animation.svg)
 
 <details>
 
@@ -1789,7 +1789,7 @@ func randomInt(min, max int) int {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Print a default header.
@@ -1810,7 +1810,7 @@ func main() {
 
 ### header/custom
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/header/custom/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/header/custom/animation.svg)
 
 <details>
 
@@ -1819,7 +1819,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Customize the DefaultHeader with a cyan background, black text, and a margin of 15.
@@ -1842,7 +1842,7 @@ func main() {
 
 ### heatmap/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/demo/animation.svg)
 
 <details>
 
@@ -1852,7 +1852,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1882,7 +1882,7 @@ func main() {
 
 ### heatmap/custom_colors
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_colors/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_colors/animation.svg)
 
 <details>
 
@@ -1892,7 +1892,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1932,7 +1932,7 @@ func main() {
 
 ### heatmap/custom_legend
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_legend/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_legend/animation.svg)
 
 <details>
 
@@ -1942,7 +1942,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -1983,7 +1983,7 @@ func main() {
 
 ### heatmap/custom_rgb
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/custom_rgb/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/custom_rgb/animation.svg)
 
 <details>
 
@@ -1993,7 +1993,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2040,7 +2040,7 @@ func main() {
 
 ### heatmap/no_grid
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/no_grid/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/no_grid/animation.svg)
 
 <details>
 
@@ -2050,7 +2050,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2083,7 +2083,7 @@ func main() {
 
 ### heatmap/separated
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/heatmap/separated/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/heatmap/separated/animation.svg)
 
 <details>
 
@@ -2092,7 +2092,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the heatmap.
@@ -2124,7 +2124,7 @@ func main() {
 
 ### interactive_confirm/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_confirm/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_confirm/demo/animation.svg)
 
 <details>
 
@@ -2134,7 +2134,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2164,7 +2164,7 @@ func boolToText(b bool) string {
 
 ### interactive_continue/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_continue/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_continue/demo/animation.svg)
 
 <details>
 
@@ -2174,7 +2174,7 @@ func boolToText(b bool) string {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2202,7 +2202,7 @@ func main() {
 
 ### interactive_multiselect/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/demo/animation.svg)
 
 <details>
 
@@ -2213,7 +2213,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2244,7 +2244,7 @@ func main() {
 
 ### interactive_multiselect/custom-checkmarks
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/custom-checkmarks/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/custom-checkmarks/animation.svg)
 
 <details>
 
@@ -2255,7 +2255,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2287,7 +2287,7 @@ func main() {
 
 ### interactive_multiselect/custom-keys
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/custom-keys/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/custom-keys/animation.svg)
 
 <details>
 
@@ -2299,7 +2299,7 @@ package main
 import (
 	"atomicgo.dev/keyboard/keys"
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2332,7 +2332,7 @@ func main() {
 
 ### interactive_select/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_select/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_select/demo/animation.svg)
 
 <details>
 
@@ -2343,7 +2343,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2374,7 +2374,7 @@ func main() {
 
 ### interactive_textinput/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_textinput/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_textinput/demo/animation.svg)
 
 <details>
 
@@ -2384,7 +2384,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2404,7 +2404,7 @@ func main() {
 
 ### interactive_textinput/default-value
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_textinput/default-value/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_textinput/default-value/animation.svg)
 
 <details>
 
@@ -2414,7 +2414,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2434,7 +2434,7 @@ func main() {
 
 ### interactive_textinput/multi-line
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_textinput/multi-line/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_textinput/multi-line/animation.svg)
 
 <details>
 
@@ -2444,7 +2444,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2470,7 +2470,7 @@ func main() {
 
 ### interactive_textinput/password
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_textinput/password/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_textinput/password/animation.svg)
 
 <details>
 
@@ -2479,7 +2479,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create an interactive text input with a mask for password input
@@ -2502,7 +2502,7 @@ func main() {
 
 ### logger/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/demo/animation.svg)
 
 <details>
 
@@ -2512,7 +2512,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"time"
 )
 
@@ -2578,7 +2578,7 @@ func sleep() {
 
 ### logger/custom-key-styles
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/custom-key-styles/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/custom-key-styles/animation.svg)
 
 <details>
 
@@ -2587,7 +2587,7 @@ func sleep() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with a level of Trace or higher.
@@ -2620,7 +2620,7 @@ func main() {
 
 ### logger/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/default/animation.svg)
 
 <details>
 
@@ -2630,7 +2630,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"time"
 )
 
@@ -2676,7 +2676,7 @@ func main() {
 
 ### logger/json
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/json/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/json/animation.svg)
 
 <details>
 
@@ -2685,7 +2685,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with Trace level and JSON formatter
@@ -2718,7 +2718,7 @@ func main() {
 
 ### logger/with-caller
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/with-caller/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/with-caller/animation.svg)
 
 <details>
 
@@ -2727,7 +2727,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with Trace level and caller information
@@ -2768,7 +2768,7 @@ func main() {
 
 ### multiple-live-printers/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/multiple-live-printers/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/multiple-live-printers/demo/animation.svg)
 
 <details>
 
@@ -2780,7 +2780,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -2842,7 +2842,7 @@ func main() {
 
 ### panel/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/panel/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/panel/demo/animation.svg)
 
 <details>
 
@@ -2851,7 +2851,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define panels in a 2D grid system
@@ -2877,7 +2877,7 @@ func main() {
 
 ### paragraph/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/paragraph/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/paragraph/demo/animation.svg)
 
 <details>
 
@@ -2886,7 +2886,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Using the default paragraph printer to print a long text.
@@ -2911,7 +2911,7 @@ func main() {
 
 ### paragraph/customized
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/paragraph/customized/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/paragraph/customized/animation.svg)
 
 <details>
 
@@ -2920,7 +2920,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a long text to be printed as a paragraph.
@@ -2948,7 +2948,7 @@ func main() {
 
 ### prefix/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/prefix/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/prefix/demo/animation.svg)
 
 <details>
 
@@ -2957,7 +2957,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Enable debug messages in PTerm.
@@ -2993,7 +2993,7 @@ func main() {
 
 ### progressbar/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/progressbar/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/progressbar/demo/animation.svg)
 
 <details>
 
@@ -3006,7 +3006,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 // Slice of strings representing names of pseudo applications to be downloaded.
@@ -3045,7 +3045,7 @@ func main() {
 
 ### progressbar/multiple
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/progressbar/multiple/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/progressbar/multiple/animation.svg)
 
 <details>
 
@@ -3057,7 +3057,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -3107,7 +3107,7 @@ func main() {
 
 ### section/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/section/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/section/demo/animation.svg)
 
 <details>
 
@@ -3116,7 +3116,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a section with level one and print it.
@@ -3138,7 +3138,7 @@ func main() {
 
 ### slog/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/slog/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/slog/demo/animation.svg)
 
 <details>
 
@@ -3150,7 +3150,7 @@ package main
 import (
 	"log/slog"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -3185,7 +3185,7 @@ func main() {
 
 ### spinner/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/spinner/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/spinner/demo/animation.svg)
 
 <details>
 
@@ -3197,7 +3197,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -3250,7 +3250,7 @@ func main() {
 
 ### spinner/multiple
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/spinner/multiple/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/spinner/multiple/animation.svg)
 
 <details>
 
@@ -3262,7 +3262,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -3312,7 +3312,7 @@ func main() {
 
 ### style/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/style/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/style/demo/animation.svg)
 
 <details>
 
@@ -3321,7 +3321,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a primary style with light cyan foreground, gray background, and bold text
@@ -3343,7 +3343,7 @@ func main() {
 
 ### table/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/demo/animation.svg)
 
 <details>
 
@@ -3352,7 +3352,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the first table
@@ -3388,7 +3388,7 @@ func main() {
 
 ### table/boxed
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/boxed/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/boxed/animation.svg)
 
 <details>
 
@@ -3397,7 +3397,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.
@@ -3423,7 +3423,7 @@ func main() {
 
 ### table/multiple-lines
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/multiple-lines/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/multiple-lines/animation.svg)
 
 <details>
 
@@ -3432,7 +3432,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.
@@ -3456,7 +3456,7 @@ func main() {
 
 ### table/right-alignment
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/right-alignment/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/right-alignment/animation.svg)
 
 <details>
 
@@ -3465,7 +3465,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.
@@ -3491,7 +3491,7 @@ func main() {
 
 ### theme/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/theme/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/theme/demo/animation.svg)
 
 <details>
 
@@ -3501,7 +3501,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"reflect"
 	"time"
 )
@@ -3539,7 +3539,7 @@ func main() {
 
 ### tree/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/tree/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/tree/demo/animation.svg)
 
 <details>
 
@@ -3549,7 +3549,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -3581,7 +3581,7 @@ func main() {
 
 ### tree/from-leveled-list
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/tree/from-leveled-list/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/tree/from-leveled-list/animation.svg)
 
 <details>
 
@@ -3591,8 +3591,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 ### logger/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/demo/animation.svg)
 
 <details>
 
@@ -10,7 +10,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"time"
 )
 
@@ -76,7 +76,7 @@ func sleep() {
 
 ### logger/custom-key-styles
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/custom-key-styles/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/custom-key-styles/animation.svg)
 
 <details>
 
@@ -85,7 +85,7 @@ func sleep() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with a level of Trace or higher.
@@ -118,7 +118,7 @@ func main() {
 
 ### logger/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/default/animation.svg)
 
 <details>
 
@@ -128,7 +128,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"time"
 )
 
@@ -174,7 +174,7 @@ func main() {
 
 ### logger/json
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/json/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/json/animation.svg)
 
 <details>
 
@@ -183,7 +183,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with Trace level and JSON formatter
@@ -216,7 +216,7 @@ func main() {
 
 ### logger/with-caller
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/logger/with-caller/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/logger/with-caller/animation.svg)
 
 <details>
 
@@ -225,7 +225,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with Trace level and caller information

@@ -1,6 +1,6 @@
 ### barchart/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/demo/animation.svg)
 
 <details>
 
@@ -10,7 +10,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 
 ### barchart/custom-height
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/custom-height/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/custom-height/animation.svg)
 
 <details>
 
@@ -50,7 +50,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a slice of Bar structs. Each struct represents a bar in the chart.
@@ -80,7 +80,7 @@ func main() {
 
 ### barchart/custom-width
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/custom-width/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/custom-width/animation.svg)
 
 <details>
 
@@ -89,7 +89,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -117,7 +117,7 @@ func main() {
 
 ### barchart/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/default/animation.svg)
 
 <details>
 
@@ -126,7 +126,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart. Each bar is represented by a `pterm.Bar` struct.
@@ -155,7 +155,7 @@ func main() {
 
 ### barchart/horizontal
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/horizontal/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/horizontal/animation.svg)
 
 <details>
 
@@ -164,7 +164,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -192,7 +192,7 @@ func main() {
 
 ### barchart/horizontal-show-value
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/horizontal-show-value/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/horizontal-show-value/animation.svg)
 
 <details>
 
@@ -201,7 +201,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the bar chart
@@ -229,7 +229,7 @@ func main() {
 
 ### barchart/mixed-values
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/mixed-values/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/mixed-values/animation.svg)
 
 <details>
 
@@ -239,7 +239,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -274,7 +274,7 @@ func main() {
 
 ### barchart/negative-values
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/negative-values/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/negative-values/animation.svg)
 
 <details>
 
@@ -284,7 +284,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -316,7 +316,7 @@ func main() {
 
 ### barchart/show-value
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/barchart/show-value/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/barchart/show-value/animation.svg)
 
 <details>
 
@@ -325,7 +325,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define a slice of bars for the bar chart. Each bar is represented by a struct

@@ -1,6 +1,6 @@
 ### table/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/demo/animation.svg)
 
 <details>
 
@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the first table
@@ -45,7 +45,7 @@ func main() {
 
 ### table/boxed
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/boxed/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/boxed/animation.svg)
 
 <details>
 
@@ -54,7 +54,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.
@@ -80,7 +80,7 @@ func main() {
 
 ### table/multiple-lines
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/multiple-lines/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/multiple-lines/animation.svg)
 
 <details>
 
@@ -89,7 +89,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.
@@ -113,7 +113,7 @@ func main() {
 
 ### table/right-alignment
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/table/right-alignment/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/table/right-alignment/animation.svg)
 
 <details>
 
@@ -122,7 +122,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Define the data for the table.

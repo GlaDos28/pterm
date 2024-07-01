@@ -1,6 +1,6 @@
 ### multiple-live-printers/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/multiple-live-printers/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/multiple-live-printers/demo/animation.svg)
 
 <details>
 
@@ -12,7 +12,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

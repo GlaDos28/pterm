@@ -6,7 +6,7 @@ import (
 
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func TestHeatmapPrinter_NilPrint(t *testing.T) {

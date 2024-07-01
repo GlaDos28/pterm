@@ -5,7 +5,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a logger with a level of Trace or higher.

@@ -10,8 +10,8 @@ import (
 	"atomicgo.dev/keyboard/keys"
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/internal"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/internal"
 )
 
 func TestInteractiveTextInputPrinter_WithDefaultText(t *testing.T) {

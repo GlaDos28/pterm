@@ -1,6 +1,6 @@
 ### area/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/demo/animation.svg)
 
 <details>
 
@@ -12,8 +12,8 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -53,7 +53,7 @@ func main() {
 
 ### area/center
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/center/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/center/animation.svg)
 
 <details>
 
@@ -65,7 +65,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -93,7 +93,7 @@ func main() {
 
 ### area/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/default/animation.svg)
 
 <details>
 
@@ -105,7 +105,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -134,7 +134,7 @@ func main() {
 
 ### area/dynamic-chart
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/dynamic-chart/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/dynamic-chart/animation.svg)
 
 <details>
 
@@ -146,7 +146,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -188,7 +188,7 @@ func dynamicBars(i int) pterm.Bars {
 
 ### area/fullscreen
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/fullscreen/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/fullscreen/animation.svg)
 
 <details>
 
@@ -200,7 +200,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -228,7 +228,7 @@ func main() {
 
 ### area/fullscreen-center
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/area/fullscreen-center/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/area/fullscreen-center/animation.svg)
 
 <details>
 
@@ -240,7 +240,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

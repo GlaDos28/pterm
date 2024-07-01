@@ -1,6 +1,6 @@
 ### header/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/header/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/header/demo/animation.svg)
 
 <details>
 
@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Print a default header.
@@ -30,7 +30,7 @@ func main() {
 
 ### header/custom
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/header/custom/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/header/custom/animation.svg)
 
 <details>
 
@@ -39,7 +39,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Customize the DefaultHeader with a cyan background, black text, and a margin of 15.

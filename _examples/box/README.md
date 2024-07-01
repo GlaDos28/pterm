@@ -1,6 +1,6 @@
 ### box/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/demo/animation.svg)
 
 <details>
 
@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Print an informational message.
@@ -40,7 +40,7 @@ func main() {
 
 ### box/custom-padding
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/custom-padding/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/custom-padding/animation.svg)
 
 <details>
 
@@ -49,7 +49,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with custom padding options and print "Hello, World!" inside it.
@@ -62,7 +62,7 @@ func main() {
 
 ### box/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/default/animation.svg)
 
 <details>
 
@@ -71,7 +71,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with PTerm and print a message in it.
@@ -85,7 +85,7 @@ func main() {
 
 ### box/title
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/box/title/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/box/title/animation.svg)
 
 <details>
 
@@ -94,7 +94,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/glados28/pterm"
 
 func main() {
 	// Create a default box with specified padding

@@ -6,7 +6,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 	"reflect"
 	"time"
 )

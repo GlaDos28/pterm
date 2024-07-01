@@ -8,7 +8,7 @@ package main
 import (
 	"atomicgo.dev/keyboard/keys"
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

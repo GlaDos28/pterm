@@ -1,6 +1,6 @@
 ### bigtext/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/demo/animation.svg)
 
 <details>
 
@@ -10,8 +10,8 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 
 ### bigtext/colored
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/colored/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/colored/animation.svg)
 
 <details>
 
@@ -51,8 +51,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {
@@ -70,7 +70,7 @@ func main() {
 
 ### bigtext/default
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/default/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/bigtext/default/animation.svg)
 
 <details>
 
@@ -80,8 +80,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/glados28/pterm"
+	"github.com/glados28/pterm/putils"
 )
 
 func main() {

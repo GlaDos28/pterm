@@ -7,7 +7,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 ### interactive_multiselect/demo
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/demo/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/demo/animation.svg)
 
 <details>
 
@@ -11,7 +11,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 
 ### interactive_multiselect/custom-checkmarks
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/custom-checkmarks/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/custom-checkmarks/animation.svg)
 
 <details>
 
@@ -53,7 +53,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
@@ -85,7 +85,7 @@ func main() {
 
 ### interactive_multiselect/custom-keys
 
-![Animation](https://raw.githubusercontent.com/pterm/pterm/master/_examples/interactive_multiselect/custom-keys/animation.svg)
+![Animation](https://raw.githubusercontent.com/glados28/pterm/master/_examples/interactive_multiselect/custom-keys/animation.svg)
 
 <details>
 
@@ -97,7 +97,7 @@ package main
 import (
 	"atomicgo.dev/keyboard/keys"
 	"fmt"
-	"github.com/pterm/pterm"
+	"github.com/glados28/pterm"
 )
 
 func main() {
