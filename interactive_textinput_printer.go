@@ -121,6 +121,8 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 		}
 
 		switch key.Code {
+		case keys.Esc:
+			return true, EscapePressed
 		case keys.Tab:
 			if p.MultiLine {
 				area.Bottom()

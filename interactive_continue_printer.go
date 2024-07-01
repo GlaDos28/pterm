@@ -136,6 +136,8 @@ func (p InteractiveContinuePrinter) Show(text ...string) (string, error) {
 		char := keyInfo.String()
 
 		switch key {
+		case keys.Esc:
+			return true, EscapePressed
 		case keys.RuneKey:
 			for i, c := range p.Handles {
 				if !p.ShowShortHandles {

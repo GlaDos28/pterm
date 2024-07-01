@@ -88,7 +88,7 @@ func (p InteractiveConfirmPrinter) WithSuffixStyle(style *Style) *InteractiveCon
 	return &p
 }
 
-// OnInterrupt sets the function to execute on exit of the input reader
+// WithOnInterruptFunc sets the function to execute on exit of the input reader
 func (p InteractiveConfirmPrinter) WithOnInterruptFunc(exitFunc func()) *InteractiveConfirmPrinter {
 	p.OnInterruptFunc = exitFunc
 	return &p
@@ -130,6 +130,8 @@ func (p InteractiveConfirmPrinter) Show(text ...string) (bool, error) {
 		}
 
 		switch key {
+		case keys.Esc:
+			return true, EscapePressed
 		case keys.RuneKey:
 			switch char {
 			case y:

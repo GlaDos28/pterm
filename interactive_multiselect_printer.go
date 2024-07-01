@@ -175,6 +175,8 @@ func (p *InteractiveMultiselectPrinter) Show(text ...string) ([]string, error) {
 		}
 
 		switch key {
+		case keys.Esc:
+			return true, EscapePressed
 		case p.KeyConfirm:
 			if len(p.fuzzySearchMatches) == 0 {
 				return false, nil

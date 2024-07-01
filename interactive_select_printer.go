@@ -156,6 +156,8 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 		}
 
 		switch key {
+		case keys.Esc:
+			return true, EscapePressed
 		case keys.RuneKey:
 			if p.Filter {
 				// Fuzzy search for options
