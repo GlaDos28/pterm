@@ -8,8 +8,8 @@ import (
 	"atomicgo.dev/cursor"
 	"atomicgo.dev/keyboard"
 	"atomicgo.dev/keyboard/keys"
-	"github.com/lithammer/fuzzysearch/fuzzy"
 	"github.com/glados28/pterm/internal"
+	"github.com/lithammer/fuzzysearch/fuzzy"
 )
 
 var (
@@ -254,6 +254,9 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 
 		return false, nil
 	})
+	if err == EscapePressed {
+		return "", err
+	}
 	if err != nil {
 		Error.Println(err)
 		return "", fmt.Errorf("failed to start keyboard listener: %w", err)

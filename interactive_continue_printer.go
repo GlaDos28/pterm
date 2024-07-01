@@ -165,7 +165,7 @@ func (p InteractiveContinuePrinter) Show(text ...string) (string, error) {
 	return result, err
 }
 
-// getShortHandles returns the short hand answers for the continueation prompt
+// getShortHandles returns the shorthand answers for the continuation prompt
 func (p InteractiveContinuePrinter) getShortHandles() []string {
 	var handles []string
 	for _, option := range p.Options {

@@ -292,6 +292,9 @@ func (p *InteractiveMultiselectPrinter) Show(text ...string) ([]string, error) {
 
 		return false, nil
 	})
+	if err == EscapePressed {
+		return nil, err
+	}
 	if err != nil {
 		Error.Println(err)
 		return nil, fmt.Errorf("failed to start keyboard listener: %w", err)
