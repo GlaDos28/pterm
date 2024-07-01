@@ -120,6 +120,8 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 		p.updateArea(&area)
 	}
 
+	escapePressed := false
+
 	err := keyboard.Listen(func(key keys.Key) (stop bool, err error) {
 		if !p.MultiLine {
 			p.cursorYPos = 0
@@ -130,7 +132,8 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 
 		switch key.Code {
 		case keys.Esc:
-			return true, EscapePressed
+			escapePressed = true
+			return true, nil
 		case keys.Tab:
 			if p.MultiLine {
 				area.Bottom()
@@ -261,6 +264,9 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 	})
 	if err != nil {
 		return "", err
+	}
+	if escapePressed {
+		return "", EscapePressed
 	}
 
 	// Add new line

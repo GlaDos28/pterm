@@ -165,6 +165,9 @@ func (p *InteractiveMultiselectPrinter) Show(text ...string) ([]string, error) {
 
 	cursor.Hide()
 	defer cursor.Show()
+
+	escapePressed := false
+
 	err = keyboard.Listen(func(keyInfo keys.Key) (stop bool, err error) {
 		key := keyInfo.Code
 
@@ -176,7 +179,8 @@ func (p *InteractiveMultiselectPrinter) Show(text ...string) ([]string, error) {
 
 		switch key {
 		case keys.Esc:
-			return true, EscapePressed
+			escapePressed = true
+			return true, nil
 		case p.KeyConfirm:
 			if len(p.fuzzySearchMatches) == 0 {
 				return false, nil
@@ -292,12 +296,12 @@ func (p *InteractiveMultiselectPrinter) Show(text ...string) ([]string, error) {
 
 		return false, nil
 	})
-	if err == EscapePressed {
-		return nil, err
-	}
 	if err != nil {
 		Error.Println(err)
 		return nil, fmt.Errorf("failed to start keyboard listener: %w", err)
+	}
+	if escapePressed {
+		return nil, EscapePressed
 	}
 
 	var result []string

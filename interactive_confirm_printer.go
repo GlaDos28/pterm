@@ -121,6 +121,8 @@ func (p InteractiveConfirmPrinter) Show(text ...string) (bool, error) {
 	p.TextStyle.Print(text[0] + " " + p.getSuffix() + p.Delimiter)
 	y, n := p.getShortHandles()
 
+	escapePressed := false
+
 	var interrupted bool
 	err := keyboard.Listen(func(keyInfo keys.Key) (stop bool, err error) {
 		key := keyInfo.Code
@@ -131,7 +133,8 @@ func (p InteractiveConfirmPrinter) Show(text ...string) (bool, error) {
 
 		switch key {
 		case keys.Esc:
-			return true, EscapePressed
+			escapePressed = true
+			return true, nil
 		case keys.RuneKey:
 			switch char {
 			case y:
@@ -163,6 +166,9 @@ func (p InteractiveConfirmPrinter) Show(text ...string) (bool, error) {
 	})
 	if !interrupted {
 		cursor.StartOfLine()
+	}
+	if escapePressed {
+		return true, EscapePressed
 	}
 	return result, err
 }

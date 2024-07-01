@@ -128,6 +128,8 @@ func (p InteractiveContinuePrinter) Show(text ...string) (string, error) {
 
 	p.TextStyle.Print(text[0] + " " + p.getSuffix() + p.Delimiter)
 
+	escapePressed := false
+
 	err := keyboard.Listen(func(keyInfo keys.Key) (stop bool, err error) {
 		if err != nil {
 			return false, fmt.Errorf("failed to get key: %w", err)
@@ -137,7 +139,8 @@ func (p InteractiveContinuePrinter) Show(text ...string) (string, error) {
 
 		switch key {
 		case keys.Esc:
-			return true, EscapePressed
+			escapePressed = true
+			return true, nil
 		case keys.RuneKey:
 			for i, c := range p.Handles {
 				if !p.ShowShortHandles {
@@ -162,6 +165,13 @@ func (p InteractiveContinuePrinter) Show(text ...string) (string, error) {
 		return false, nil
 	})
 	cursor.StartOfLine()
+	if err != nil {
+		return result, err
+	}
+	if escapePressed {
+		return "", EscapePressed
+	}
+
 	return result, err
 }
 
