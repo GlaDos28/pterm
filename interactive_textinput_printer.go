@@ -17,6 +17,7 @@ var DefaultInteractiveTextInput = InteractiveTextInputPrinter{
 	Delimiter:   ": ",
 	TextStyle:   &ThemeDefault.PrimaryStyle,
 	Mask:        "",
+	InputColor:  FgGray,
 }
 
 // InteractiveTextInputPrinter is a printer for interactive select menus.
@@ -27,6 +28,7 @@ type InteractiveTextInputPrinter struct {
 	Delimiter       string
 	MultiLine       bool
 	Mask            string
+	InputColor      Color
 	OnInterruptFunc func()
 
 	input         []string
@@ -64,6 +66,12 @@ func (p InteractiveTextInputPrinter) WithMultiLine(multiLine ...bool) *Interacti
 // WithMask sets the mask.
 func (p InteractiveTextInputPrinter) WithMask(mask string) *InteractiveTextInputPrinter {
 	p.Mask = mask
+	return &p
+}
+
+// WithInputColor sets the input color.
+func (p InteractiveTextInputPrinter) WithInputColor(color Color) *InteractiveTextInputPrinter {
+	p.InputColor = color
 	return &p
 }
 
@@ -295,7 +303,7 @@ func (p InteractiveTextInputPrinter) updateArea(area *cursor.Area) string {
 		p.cursorXPos = -internal.GetStringMaxWidth(p.input[p.cursorYPos])
 	}
 
-	area.Update(Gray(areaText))
+	area.Update(p.InputColor.Sprint(areaText))
 	area.Top()
 	area.Down(p.cursorYPos + 1)
 	area.StartOfLine()
@@ -304,5 +312,6 @@ func (p InteractiveTextInputPrinter) updateArea(area *cursor.Area) string {
 	} else {
 		cursor.Right(internal.GetStringMaxWidth(areaText) + p.cursorXPos)
 	}
+
 	return areaText
 }
