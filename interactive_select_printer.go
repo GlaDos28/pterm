@@ -24,6 +24,7 @@ var (
 		Selector:      ">",
 		SelectorStyle: &ThemeDefault.SecondaryStyle,
 		Filter:        true,
+		ErrorOnTab:    false,
 	}
 )
 
@@ -39,6 +40,7 @@ type InteractiveSelectPrinter struct {
 	SelectorStyle   *Style
 	OnInterruptFunc func()
 	Filter          bool
+	ErrorOnTab      bool
 
 	selectedOption        int
 	result                string
@@ -74,7 +76,7 @@ func (p InteractiveSelectPrinter) WithMaxHeight(maxHeight int) *InteractiveSelec
 	return &p
 }
 
-// OnInterrupt sets the function to execute on exit of the input reader
+// WithOnInterruptFunc sets the function to execute on exit of the input reader
 func (p InteractiveSelectPrinter) WithOnInterruptFunc(exitFunc func()) *InteractiveSelectPrinter {
 	p.OnInterruptFunc = exitFunc
 	return &p
@@ -83,6 +85,12 @@ func (p InteractiveSelectPrinter) WithOnInterruptFunc(exitFunc func()) *Interact
 // WithFilter sets the Filter option
 func (p InteractiveSelectPrinter) WithFilter(b ...bool) *InteractiveSelectPrinter {
 	p.Filter = internal.WithBoolean(b)
+	return &p
+}
+
+// WithErrorOnTab sets the ErrorOnTab option
+func (p InteractiveSelectPrinter) WithErrorOnTab(b ...bool) *InteractiveSelectPrinter {
+	p.ErrorOnTab = internal.WithBoolean(b)
 	return &p
 }
 
@@ -147,6 +155,7 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 	defer cursor.Show()
 
 	escapePressed := false
+	exitOnTab := false
 
 	err = keyboard.Listen(func(keyInfo keys.Key) (stop bool, err error) {
 		key := keyInfo.Code
@@ -161,6 +170,11 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 		case keys.Esc:
 			escapePressed = true
 			return true, nil
+		case keys.Tab:
+			if p.ErrorOnTab {
+				exitOnTab = true
+				return true, nil
+			}
 		case keys.RuneKey:
 			if p.Filter {
 				// Fuzzy search for options
@@ -260,6 +274,9 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 	if err != nil {
 		Error.Println(err)
 		return "", fmt.Errorf("failed to start keyboard listener: %w", err)
+	}
+	if exitOnTab {
+		return "", TabPressed
 	}
 	if escapePressed {
 		return "", EscapePressed

@@ -18,6 +18,7 @@ var DefaultInteractiveTextInput = InteractiveTextInputPrinter{
 	TextStyle:   &ThemeDefault.PrimaryStyle,
 	Mask:        "",
 	InputColor:  FgGray,
+	ErrorOnTab:  false,
 }
 
 // InteractiveTextInputPrinter is a printer for interactive select menus.
@@ -30,6 +31,7 @@ type InteractiveTextInputPrinter struct {
 	Mask            string
 	InputColor      Color
 	OnInterruptFunc func()
+	ErrorOnTab      bool
 
 	input         []string
 	cursorXPos    int
@@ -87,6 +89,12 @@ func (p InteractiveTextInputPrinter) WithDelimiter(delimiter string) *Interactiv
 	return &p
 }
 
+// WithErrorOnTab sets the ErrorOnTab option
+func (p InteractiveTextInputPrinter) WithErrorOnTab(b ...bool) *InteractiveTextInputPrinter {
+	p.ErrorOnTab = internal.WithBoolean(b)
+	return &p
+}
+
 // Show shows the interactive select menu and returns the selected entry.
 func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 	// should be the first defer statement to make sure it is executed last
@@ -121,6 +129,7 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 	}
 
 	escapePressed := false
+	exitOnTab := false
 
 	err := keyboard.Listen(func(key keys.Key) (stop bool, err error) {
 		if !p.MultiLine {
@@ -135,6 +144,11 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 			escapePressed = true
 			return true, nil
 		case keys.Tab:
+			if p.ErrorOnTab {
+				exitOnTab = true
+				return true, nil
+			}
+
 			if p.MultiLine {
 				area.Bottom()
 				return true, nil
@@ -264,6 +278,9 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 	})
 	if err != nil {
 		return "", err
+	}
+	if exitOnTab {
+		return "", TabPressed
 	}
 	if escapePressed {
 		return "", EscapePressed
