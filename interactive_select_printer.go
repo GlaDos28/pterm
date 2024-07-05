@@ -171,7 +171,7 @@ func (p *InteractiveSelectPrinter) Show(text ...string) (string, error) {
 			escapePressed = true
 			return true, nil
 		case keys.Tab:
-			if p.ErrorOnTab {
+			if p.ErrorOnTab && len(p.fuzzySearchString) == 0 {
 				exitOnTab = true
 				return true, nil
 			}
