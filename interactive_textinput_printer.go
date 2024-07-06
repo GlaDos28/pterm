@@ -279,9 +279,6 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	if exitOnTab {
-		return "", TabPressed
-	}
 	if escapePressed {
 		return "", EscapePressed
 	}
@@ -301,7 +298,12 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 		return p.DefaultValue, nil
 	}
 
-	return strings.ReplaceAll(areaText, p.text, ""), nil
+	var retErr error
+	if exitOnTab {
+		err = TabPressed
+	}
+
+	return strings.ReplaceAll(areaText, p.text, ""), retErr
 }
 
 func (p InteractiveTextInputPrinter) updateArea(area *cursor.Area) string {
