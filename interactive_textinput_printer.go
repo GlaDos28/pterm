@@ -294,7 +294,7 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 		}
 	}
 
-	if !p.startedTyping {
+	if !exitOnTab && !p.startedTyping {
 		return p.DefaultValue, nil
 	}
 
