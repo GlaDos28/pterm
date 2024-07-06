@@ -144,7 +144,7 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 			escapePressed = true
 			return true, nil
 		case keys.Tab:
-			if p.ErrorOnTab && len(p.input) == 1 && len(p.input[0]) == 0 {
+			if p.ErrorOnTab {
 				exitOnTab = true
 				return true, nil
 			}
