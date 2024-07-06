@@ -300,7 +300,7 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 
 	var retErr error
 	if exitOnTab {
-		err = TabPressed
+		retErr = TabPressed
 	}
 
 	return strings.ReplaceAll(areaText, p.text, ""), retErr
