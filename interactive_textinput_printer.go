@@ -13,12 +13,13 @@ import (
 
 // DefaultInteractiveTextInput is the default InteractiveTextInput printer.
 var DefaultInteractiveTextInput = InteractiveTextInputPrinter{
-	DefaultText: "Input text",
-	Delimiter:   ": ",
-	TextStyle:   &ThemeDefault.PrimaryStyle,
-	Mask:        "",
-	InputColor:  FgGray,
-	ErrorOnTab:  false,
+	DefaultText:   "Input text",
+	Delimiter:     ": ",
+	TextStyle:     &ThemeDefault.PrimaryStyle,
+	Mask:          "",
+	InputColor:    FgGray,
+	ErrorOnTab:    false,
+	OnUpDown:      nil,
 }
 
 // InteractiveTextInputPrinter is a printer for interactive select menus.
@@ -32,6 +33,7 @@ type InteractiveTextInputPrinter struct {
 	InputColor      Color
 	OnInterruptFunc func()
 	ErrorOnTab      bool
+	OnUpDown        func(input string, isUp bool) string
 
 	input         []string
 	cursorXPos    int
@@ -92,6 +94,12 @@ func (p InteractiveTextInputPrinter) WithDelimiter(delimiter string) *Interactiv
 // WithErrorOnTab sets the ErrorOnTab option
 func (p InteractiveTextInputPrinter) WithErrorOnTab(b ...bool) *InteractiveTextInputPrinter {
 	p.ErrorOnTab = internal.WithBoolean(b)
+	return &p
+}
+
+// WithOnUpDown sets the OnUpDown option
+func (p InteractiveTextInputPrinter) WithOnUpDown(f func(input string, isUp bool) string) *InteractiveTextInputPrinter {
+	p.OnUpDown = f
 	return &p
 }
 
@@ -222,12 +230,22 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 			cancel()
 			return true, nil
 		case keys.Down:
-			if !p.MultiLine {
-				return false, nil
-			}
 			if !p.startedTyping {
 				p.input = []string{""}
 				p.startedTyping = true
+			}
+			if !p.MultiLine {
+				if p.OnUpDown != nil {
+					input := p.input[len(p.input) - 1]
+
+					newInput := p.OnUpDown(input, false)
+					if newInput != input {
+						p.input[len(p.input) - 1] = newInput
+						p.cursorXPos = 0
+					}
+				}
+
+				return false, nil
 			}
 			if p.cursorYPos+1 < len(p.input) {
 				p.cursorXPos = (internal.GetStringMaxWidth(p.input[p.cursorYPos]) + p.cursorXPos) - internal.GetStringMaxWidth(p.input[p.cursorYPos+1])
@@ -237,12 +255,22 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 				p.cursorYPos++
 			}
 		case keys.Up:
-			if !p.MultiLine {
-				return false, nil
-			}
 			if !p.startedTyping {
 				p.input = []string{""}
 				p.startedTyping = true
+			}
+			if !p.MultiLine {
+				if p.OnUpDown != nil {
+					input := p.input[len(p.input) - 1]
+
+					newInput := p.OnUpDown(input, true)
+					if newInput != input {
+						p.input[len(p.input) - 1] = newInput
+						p.cursorXPos = 0
+					}
+				}
+
+				return false, nil
 			}
 			if p.cursorYPos > 0 {
 				p.cursorXPos = (internal.GetStringMaxWidth(p.input[p.cursorYPos]) + p.cursorXPos) - internal.GetStringMaxWidth(p.input[p.cursorYPos-1])
