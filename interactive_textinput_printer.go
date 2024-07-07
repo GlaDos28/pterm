@@ -147,6 +147,16 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 			p.input = append(p.input, "")
 		}
 
+		handleOnUpDown := func(isUp bool) {
+			input := p.input[p.cursorYPos]
+
+			newInput := p.OnUpDown(input, isUp)
+			if newInput != input {
+				p.input[p.cursorYPos] = newInput
+				p.cursorXPos = 0
+			}
+		}
+
 		switch key.Code {
 		case keys.Esc:
 			escapePressed = true
@@ -235,19 +245,12 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 				p.startedTyping = true
 			}
 			if !p.MultiLine {
-				if p.OnUpDown != nil {
-					input := p.input[len(p.input) - 1]
-
-					newInput := p.OnUpDown(input, false)
-					if newInput != input {
-						p.input[len(p.input) - 1] = newInput
-						p.cursorXPos = 0
-					}
+				if p.OnUpDown == nil {
+					return false, nil
 				}
 
-				return false, nil
-			}
-			if p.cursorYPos+1 < len(p.input) {
+				handleOnUpDown(false)
+			} else if p.cursorYPos+1 < len(p.input) {
 				p.cursorXPos = (internal.GetStringMaxWidth(p.input[p.cursorYPos]) + p.cursorXPos) - internal.GetStringMaxWidth(p.input[p.cursorYPos+1])
 				if p.cursorXPos > 0 {
 					p.cursorXPos = 0
@@ -260,19 +263,12 @@ func (p InteractiveTextInputPrinter) Show(text ...string) (string, error) {
 				p.startedTyping = true
 			}
 			if !p.MultiLine {
-				if p.OnUpDown != nil {
-					input := p.input[len(p.input) - 1]
-
-					newInput := p.OnUpDown(input, true)
-					if newInput != input {
-						p.input[len(p.input) - 1] = newInput
-						p.cursorXPos = 0
-					}
+				if p.OnUpDown == nil {
+					return false, nil
 				}
 
-				return false, nil
-			}
-			if p.cursorYPos > 0 {
+				handleOnUpDown(true)
+			} else if p.cursorYPos > 0 {
 				p.cursorXPos = (internal.GetStringMaxWidth(p.input[p.cursorYPos]) + p.cursorXPos) - internal.GetStringMaxWidth(p.input[p.cursorYPos-1])
 				if p.cursorXPos > 0 {
 					p.cursorXPos = 0
